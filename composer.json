@@ -1,0 +1,42 @@
+{
+    "name": "rejvi/ssl-isms-plus",
+    "description": "A simple package to send SMS using SSL Wireless iSMS Plus API",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rejvi",
+            "email": "rejvi.nomani@email.com",
+            "homepage": "https://rejvi.net",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/rejvi/ssl-isms-plus",
+    "keywords": [
+        "ssl-wireless",
+        "ssl-isms-plus",
+        "sms",
+        "sms-api",
+        "sms gateway",
+        "isms",
+        "ismsplus",
+        "ismsplus laravel"
+    ],
+    "require": {
+        "php": "^7.1|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rejvi\\SsliSmsPlus\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rejvi\\SslIsmsPlus\\SmsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
